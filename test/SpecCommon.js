@@ -112,7 +112,7 @@ function COMMON_CREATE_MAP(center, baseLayer, options) {
 }
 
 function REMOVE_CONTAINER() {
-    document.body.innerHTML = '';
+    // document.body.innerHTML = '';
 }
 
 var COMMON_SYMBOL_TESTOR = {
