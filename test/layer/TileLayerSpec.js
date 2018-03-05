@@ -411,7 +411,7 @@ describe('TileLayer', function () {
             container.style.height = '10px';
             document.body.appendChild(container);
             var baselayer = new maptalks.TileLayer('tile', {
-                urlTemplate : '/resources/tile.png',
+                urlTemplate : '#',
                 subdomains:['a', 'b', 'c'],
                 renderer : 'gl',
                 fadeAnimation : false
