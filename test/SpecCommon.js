@@ -86,8 +86,8 @@ function GEN_GEOMETRIES_OF_ALL_TYPES() {
 function COMMON_CREATE_MAP(center, baseLayer, options) {
     var container = document.createElement('div');
     container.id = 'test_container';
-    container.style.width = (options.width || 80) + 'px';
-    container.style.height = (options.height || 60) + 'px';
+    container.style.width = (options && options.width || 80) + 'px';
+    container.style.height = (options && options.height || 60) + 'px';
     document.body.appendChild(container);
     var option = {
         zoomAnimationDuration : 50,
