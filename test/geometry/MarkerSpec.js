@@ -321,7 +321,7 @@ describe('Geometry.Marker', function () {
         it('change marker file by updateSymbol', function (done) {
             var marker = new maptalks.Marker(map.getCenter(), {
                 symbol : {
-                    'markerFile' : 'resources/tile.png'
+                    'markerFile' : 'resources/tile-256.png'
                 }
             });
             var layer = new maptalks.VectorLayer('vector', [marker]);
