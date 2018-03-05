@@ -84,10 +84,14 @@ function GEN_GEOMETRIES_OF_ALL_TYPES() {
  * @return {Object}
  */
 function COMMON_CREATE_MAP(center, baseLayer, options) {
-    var container = document.createElement('div');
-    container.style.width = '800px';
-    container.style.height = '600px';
-    document.body.appendChild(container);
+    var container = document.getElementById('test_container');
+    if (!container) {
+        constainer = document.createElement('div');
+        container.id = 'test_container';
+        container.style.width = '800px';
+        container.style.height = '600px';
+        document.body.appendChild(container);
+    }
     var option = {
         zoomAnimationDuration : 50,
         zoom: 17,
