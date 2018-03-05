@@ -7,7 +7,10 @@ describe('Geometry.Marker', function () {
     var layer;
 
     beforeEach(function () {
-        var setups = COMMON_CREATE_MAP(center);
+        var setups = COMMON_CREATE_MAP(center, null, {
+            width : 300,
+            height : 200
+        });
         container = setups.container;
         map = setups.map;
         map.config('centerCross', true);
